@@ -29,9 +29,9 @@ public class TC004_CreateCaseWithoutMandate {
 		10)Get the text of Error message Displayed and Verify the message
 		
 	 */
-	@Test(dependsOnMethods = "mandatoryHomeWork.selenium.Salesforce.TC003_DeleteCase.tc003_DeleteCase")
+	@Test(dependsOnMethods = "group5.Selenium.Salesforce.Cases.TC003_DeleteCase.tc003_DeleteCase")
 	//@Test
-	public void tc001_CreateNewCase() {
+	public void tc004_CreateNewCaseWithoutMandate() {
 		ChromeOptions op = new ChromeOptions();
 		op.addArguments("--disable-notifications");
 		ChromeDriver driver = new ChromeDriver(op);

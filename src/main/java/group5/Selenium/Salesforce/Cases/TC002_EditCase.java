@@ -29,7 +29,7 @@ public class TC002_EditCase {
 		10. Click on Save and Verify Status as Working
 	 */
 	
-	@Test(dependsOnMethods = "mandatoryHomeWork.selenium.Salesforce.TC001_CreateNewCase.tc001_CreateNewCase")
+	@Test(dependsOnMethods = "group5.Selenium.Salesforce.Cases.TC001_CreateNewCase.tc001_CreateNewCase")
 	public void tc002_EditCase() {
 		ChromeOptions op = new ChromeOptions();
 		op.addArguments("--disable-notifications");

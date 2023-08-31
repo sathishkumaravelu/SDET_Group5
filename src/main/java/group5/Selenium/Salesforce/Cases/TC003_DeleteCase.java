@@ -27,7 +27,7 @@ public class TC003_DeleteCase {
 	 */
 	
 	//@Test
-	@Test(dependsOnMethods = "mandatoryHomeWork.selenium.Salesforce.TC002_EditCase.tc002_EditCase")
+	@Test(dependsOnMethods = "group5.Selenium.Salesforce.Cases.TC002_EditCase.tc002_EditCase")
 	public void tc003_DeleteCase() {
 		ChromeOptions op = new ChromeOptions();
 		op.addArguments("--disable-notifications");

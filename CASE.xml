@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="group5.Selenium.Salesforce.Cases.TC001_CreateNewCase"/>
+      <class name="group5.Selenium.Salesforce.Cases.TC002_EditCase"/>
+      <class name="group5.Selenium.Salesforce.Cases.TC003_DeleteCase"/>
+      <class name="group5.Selenium.Salesforce.Cases.TC004_CreateCaseWithoutMandate"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

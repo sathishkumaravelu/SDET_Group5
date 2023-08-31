@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class TC002_EditCase {
@@ -29,19 +30,25 @@ public class TC002_EditCase {
 		10. Click on Save and Verify Status as Working
 	 */
 	
+	public WebDriverWait wait;
+	public ChromeDriver driver;
+	
+
+	
 	@Test(dependsOnMethods = "group5.Selenium.Salesforce.Cases.TC001_CreateNewCase.tc001_CreateNewCase")
 	public void tc002_EditCase() {
 		ChromeOptions op = new ChromeOptions();
 		op.addArguments("--disable-notifications");
-		ChromeDriver driver = new ChromeDriver(op);
+		driver = new ChromeDriver(op);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		
 		driver.get("https://sdet3-dev-ed.develop.my.salesforce.com/");
 		driver.findElement(By.id("username")).sendKeys("sathishsdet95@2023.com");
 		driver.findElement(By.id("password")).sendKeys("iamgoingtobeSDET2023");
 		driver.findElement(By.id("Login")).click();
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[text()='Setup Home']"))));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='slds-icon-waffle']"))).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@aria-label='View All Applications']"))).click();
 		driver.findElement(By.xpath("//p[text()='Sales']")).click();
@@ -50,32 +57,31 @@ public class TC002_EditCase {
 		wait.until(ExpectedConditions.elementToBeClickable(accountsElement));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();",accountsElement);
-		
 		driver.findElement(By.xpath("(//*[@data-id='Case'])[last()]")).click();
 		driver.findElement(By.xpath("(//*[contains(@class,'rowActionsPlaceHolder')])[1]")).click();
 		driver.findElement(By.xpath("(//a[@title='Edit'])[last()]")).click();
-		
 		driver.findElement(By.xpath("(//label[text()='Status']/following-sibling::div)[1]//button")).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@title='Working']"))).click();		
-
 		driver.findElement(By.xpath("(//label[text()='Priority']/following-sibling::div)[1]//button")).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@title='Low']"))).click();		
-		
 		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("(//label[text()='Case Origin']/following-sibling::div)[1]//button")));
-		
 		driver.findElement(By.xpath("(//label[text()='Case Origin']/following-sibling::div)[1]//button")).click();
 		driver.findElement(By.xpath("//span[@title='Phone']")).click();		
-		
-		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("(//label[text()='SLA Violation']/following-sibling::div)[1]//button")));
-		
+		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("(//label[text()='SLA Violation']/following-sibling::div)[1]//button")));	
 		driver.findElement(By.xpath("(//label[text()='SLA Violation']/following-sibling::div)[1]//button")).click();
 		driver.findElement(By.xpath("//span[@title='No']")).click();		
-		
-		driver.findElement(By.xpath("//*[@name='SaveEdit']")).click();
-		
+		driver.findElement(By.xpath("//*[@name='SaveEdit']")).click();	
 		driver.findElement(By.xpath("//*[@name='refreshButton']")).click();
 		String firstEleStatus = driver.findElement(By.xpath("((//td[4]/span)[1]//span)[1]")).getText();
 		Assert.assertEquals(firstEleStatus,"Working");
+		
 	}
+	
+	@AfterTest
+	public void afterSetup() {
+		
+		driver.close();
+	}
+
 
 }

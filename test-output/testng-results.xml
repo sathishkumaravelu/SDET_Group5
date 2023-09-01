@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-01T00:15:48 IST" name="Default suite" finished-at="2023-09-01T00:19:42 IST" duration-ms="234282">
+    <groups>
+    </groups>
+    <test started-at="2023-09-01T00:15:48 IST" name="Default test" finished-at="2023-09-01T00:19:42 IST" duration-ms="234282">
+      <class name="group5.Selenium.Salesforce.WorkType.TC004_DeleteWorkType">
+        <test-method signature="tc004_DeleteWorkType()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC004_DeleteWorkType@4116aac9]" started-at="2023-09-01T00:17:56 IST" name="tc004_DeleteWorkType" finished-at="2023-09-01T00:18:19 IST" depends-on-methods="group5.Selenium.Salesforce.WorkType.TC003_EditWorkTypePositive.tc003_EditWorkTypePositive" duration-ms="22689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc004_DeleteWorkType -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC004_DeleteWorkType@4116aac9]" started-at="2023-09-01T00:19:42 IST" name="afterSetup" finished-at="2023-09-01T00:19:42 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.WorkType.TC004_DeleteWorkType -->
+      <class name="group5.Selenium.Salesforce.WorkType.TC002_EditWorkTypeNegative">
+        <test-method signature="tc002_EditWorkTypeNegative()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC002_EditWorkTypeNegative@1e800aaa]" started-at="2023-09-01T00:16:41 IST" name="tc002_EditWorkTypeNegative" finished-at="2023-09-01T00:17:03 IST" depends-on-methods="group5.Selenium.Salesforce.WorkType.TC001_NewWorkType.tc001_NewWorkType" duration-ms="22588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_EditWorkTypeNegative -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC002_EditWorkTypeNegative@1e800aaa]" started-at="2023-09-01T00:19:41 IST" name="afterSetup" finished-at="2023-09-01T00:19:42 IST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.WorkType.TC002_EditWorkTypeNegative -->
+      <class name="group5.Selenium.Salesforce.Cases.TC004_CreateCaseWithoutMandate">
+        <test-method signature="tc004_CreateNewCaseWithoutMandate()[pri:0, instance:group5.Selenium.Salesforce.Cases.TC004_CreateCaseWithoutMandate@62ddbd7e]" started-at="2023-09-01T00:18:44 IST" name="tc004_CreateNewCaseWithoutMandate" finished-at="2023-09-01T00:19:09 IST" depends-on-methods="group5.Selenium.Salesforce.Cases.TC003_DeleteCase.tc003_DeleteCase" duration-ms="24751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc004_CreateNewCaseWithoutMandate -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.Cases.TC004_CreateCaseWithoutMandate@62ddbd7e]" started-at="2023-09-01T00:19:41 IST" name="afterSetup" finished-at="2023-09-01T00:19:41 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.Cases.TC004_CreateCaseWithoutMandate -->
+      <class name="group5.Selenium.Salesforce.Cases.TC001_CreateNewCase">
+        <test-method signature="tc001_CreateNewCase()[pri:0, instance:group5.Selenium.Salesforce.Cases.TC001_CreateNewCase@74e52ef6]" started-at="2023-09-01T00:15:48 IST" name="tc001_CreateNewCase" finished-at="2023-09-01T00:16:18 IST" duration-ms="29774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_CreateNewCase -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.Cases.TC001_CreateNewCase@74e52ef6]" started-at="2023-09-01T00:19:37 IST" name="afterSetup" finished-at="2023-09-01T00:19:40 IST" duration-ms="3555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.Cases.TC001_CreateNewCase -->
+      <class name="group5.Selenium.Salesforce.WorkType.TC003_EditWorkTypePositive">
+        <test-method signature="tc003_EditWorkTypePositive()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC003_EditWorkTypePositive@6ed3ccb2]" started-at="2023-09-01T00:17:03 IST" name="tc003_EditWorkTypePositive" finished-at="2023-09-01T00:17:29 IST" depends-on-methods="group5.Selenium.Salesforce.WorkType.TC002_EditWorkTypeNegative.tc002_EditWorkTypeNegative" duration-ms="25782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003_EditWorkTypePositive -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC003_EditWorkTypePositive@6ed3ccb2]" started-at="2023-09-01T00:19:42 IST" name="afterSetup" finished-at="2023-09-01T00:19:42 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.WorkType.TC003_EditWorkTypePositive -->
+      <class name="group5.Selenium.Salesforce.Cases.TC003_DeleteCase">
+        <test-method signature="tc003_DeleteCase()[pri:0, instance:group5.Selenium.Salesforce.Cases.TC003_DeleteCase@1a677343]" started-at="2023-09-01T00:18:19 IST" name="tc003_DeleteCase" finished-at="2023-09-01T00:18:44 IST" depends-on-methods="group5.Selenium.Salesforce.Cases.TC002_EditCase.tc002_EditCase" duration-ms="25330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003_DeleteCase -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.Cases.TC003_DeleteCase@1a677343]" started-at="2023-09-01T00:19:40 IST" name="afterSetup" finished-at="2023-09-01T00:19:41 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.Cases.TC003_DeleteCase -->
+      <class name="group5.Selenium.Salesforce.Cases.TC002_EditCase">
+        <test-method signature="tc002_EditCase()[pri:0, instance:group5.Selenium.Salesforce.Cases.TC002_EditCase@15de0b3c]" started-at="2023-09-01T00:17:29 IST" name="tc002_EditCase" finished-at="2023-09-01T00:17:56 IST" depends-on-methods="group5.Selenium.Salesforce.Cases.TC001_CreateNewCase.tc001_CreateNewCase" duration-ms="26699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_EditCase -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.Cases.TC002_EditCase@15de0b3c]" started-at="2023-09-01T00:19:40 IST" name="afterSetup" finished-at="2023-09-01T00:19:40 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.Cases.TC002_EditCase -->
+      <class name="group5.Selenium.Salesforce.WorkType.TC001_NewWorkType">
+        <test-method signature="tc001_NewWorkType()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC001_NewWorkType@489115ef]" started-at="2023-09-01T00:16:18 IST" name="tc001_NewWorkType" finished-at="2023-09-01T00:16:41 IST" duration-ms="22973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_NewWorkType -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC001_NewWorkType@489115ef]" started-at="2023-09-01T00:19:41 IST" name="afterSetup" finished-at="2023-09-01T00:19:41 IST" duration-ms="529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.WorkType.TC001_NewWorkType -->
+      <class name="group5.Selenium.Salesforce.WorkType.TC005_WorkTypeMandatoryAlert">
+        <test-method signature="tc005_WorkTypeMandatoryAlert()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC005_WorkTypeMandatoryAlert@3857f613]" started-at="2023-09-01T00:19:09 IST" name="tc005_WorkTypeMandatoryAlert" finished-at="2023-09-01T00:19:37 IST" duration-ms="27839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc005_WorkTypeMandatoryAlert -->
+        <test-method is-config="true" signature="afterSetup()[pri:0, instance:group5.Selenium.Salesforce.WorkType.TC005_WorkTypeMandatoryAlert@3857f613]" started-at="2023-09-01T00:19:42 IST" name="afterSetup" finished-at="2023-09-01T00:19:42 IST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSetup -->
+      </class> <!-- group5.Selenium.Salesforce.WorkType.TC005_WorkTypeMandatoryAlert -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

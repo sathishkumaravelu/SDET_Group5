@@ -61,6 +61,7 @@ public class TC003_DeleteCase {
 		driver.findElement(By.xpath("//button[@title='Delete']")).click();
 		driver.findElement(By.xpath("//input[@placeholder='Search this list...']")).sendKeys(caseNo,Keys.ENTER);		
 		driver.findElement(By.xpath("//*[@name='refreshButton']")).click();
+		driver.findElement(By.xpath("//*[@name='refreshButton']")).click();
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//span[text()='No items to display.']"))));
 		boolean displayed = driver.findElement(By.xpath("//span[text()='No items to display.']")).isDisplayed();
 		Assert.assertEquals(displayed, true);

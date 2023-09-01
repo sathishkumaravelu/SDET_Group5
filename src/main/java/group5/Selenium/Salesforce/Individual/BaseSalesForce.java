@@ -39,6 +39,7 @@ public class BaseSalesForce {
 	public void tearDown()
 	{
 		driver.quit();
+		//driver.close();
 	}
 
 }

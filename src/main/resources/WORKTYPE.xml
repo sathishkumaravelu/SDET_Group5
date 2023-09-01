@@ -7,6 +7,7 @@
       <class name="group5.Selenium.Salesforce.WorkType.TC002_EditWorkTypeNegative"/>
        <class name="group5.Selenium.Salesforce.WorkType.TC003_EditWorkTypePositive"/>
        <class name="group5.Selenium.Salesforce.WorkType.TC004_DeleteWorkType"/>
+       <class name="group5.Selenium.Salesforce.WorkType.tc005_WorkTypeMandatoryAlert"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

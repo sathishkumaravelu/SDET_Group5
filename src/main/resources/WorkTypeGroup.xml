@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Selenium_Marathon.WorkType_Groups.TC001"/>
+      <class name="Selenium_Marathon.WorkType_Groups.TC002"/>
+      <class name="Selenium_Marathon.WorkType_Groups.TC003"/>
+      <class name="Selenium_Marathon.WorkType_Groups.TC004"/>
+      <class name="Selenium_Marathon.WorkType_Groups.TC005"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

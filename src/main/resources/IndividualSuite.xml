@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+	  <class name="mandatoryCW.selenium.salesforceTCs.BaseSalesForce"/>
+	  <class name="mandatoryCW.selenium.salesforceTCs.TC1_Individuals_Create"/>
+	  <class name="mandatoryCW.selenium.salesforceTCs.TC2_Individuals"/>
+	  <class name="mandatoryCW.selenium.salesforceTCs.TC3_IndividualDelete"/>
+      <class name="mandatoryCW.selenium.salesforceTCs.TC4_IndividualEdit"/>
+     <class name="mandatoryCW.selenium.salesforceTCs.TC5_IndividualSorting"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

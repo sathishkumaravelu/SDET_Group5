@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC004 {
@@ -53,6 +54,9 @@ public class TC004 {
 
 		String Inline_Error  = driver.findElement(By.xpath("(//div[@role='alert'])[1] ")).getText();
 		System.out.println(Inline_Error);
+		
+		String Exp = "Complete this field.";
+		Assert.assertEquals(Inline_Error, Exp);
 
 	}
 

@@ -2,6 +2,7 @@ package group5.Selenium.Salesforce.WorkTypeGroupI;
 
 import java.time.Duration;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -45,6 +46,8 @@ public class TC005 {
 		wait.until(ExpectedConditions.textToBe(By.xpath("//th[@title='Work Type Group Name']/div/span"), "Sorted Ascending"));
 		String text = driver.findElement(By.xpath("//th[@title='Work Type Group Name']/div/span")).getText();
 		System.out.println(text);
+		String Exp = "Sorted Ascending";
+		Assert.assertEquals(Exp, text);
 
 
 	}

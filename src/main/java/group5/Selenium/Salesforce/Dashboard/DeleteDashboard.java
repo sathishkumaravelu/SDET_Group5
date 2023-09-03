@@ -25,6 +25,7 @@ public class DeleteDashboard {
 		
 		//Log in to salesforce
 		
+		
 		driver.get("https://login.salesforce.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.id("username")).sendKeys("subha216@gmail.com");
